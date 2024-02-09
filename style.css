@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}   
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links :hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+.navbar-toggle-menu{
+    display: none;
+}
+
+/*side navbar*/
+
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:-60%;
+    padding: 10px;
+    color: white;
+    transition: 2s;
+    
+}
+.side-navbar-link{
+    margin-bottom: 25px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links :hover{
+    text-decoration: underline;
+    color: #white;
+}
+
+/*header*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+.header-image{
+    image: fixed;
+}
+.header-button{
+    background-color: #1D232C;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*Service*/
+.service{
+    padding: 10px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.service-container-2 div{
+    background-color: #F2F4F7;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*New arrival*/
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20PX;
+}
+ .new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding: 5% 10%;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left:25%;
+    border-radius: 10%;
+    border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.news input{
+    border: 3px solid black;
+    width: 80vw;
+    padding: 10px;
+    margin-top: 10px;
+}
+.news button{
+    padding:10px 20px;
+    background-color: #1D232C;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+}
+.footer{
+    background-color: #1D232C;
+    color: white;
+    margin-top: 20px;
+    padding: 40px;
+}
+/*Product*/
+.product-section{
+    margin-top: 10px;
+}
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 10px;
+    justify-content:space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
+/* Contact us*/
+.contact-us-container{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.contact-us h2{
+    margin-bottom: 20px;
+}
+.form  {
+    padding: 10px;
+}
+.form-two{
+    padding:10px ;
+}
+.form input{
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form label{
+    margin-bottom: 50px;
+}
+.form-two textarea{
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-button{
+    margin-left: 10px;
+}
+.contact-button button{
+    background-color: #0057E7;
+    border: none;
+    padding: 10px;
+    width: 15%;
+    color:white;
+    border-radius: 10px;
+}
+.contact-button button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+/*Media query*/
+
+@media only screen and (max-width:700px) {
+    .navbar-toggle-menu{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+}
